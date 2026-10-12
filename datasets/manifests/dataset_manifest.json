@@ -1,0 +1,272 @@
+[
+  {
+    "question_id": "Q001",
+    "question": "An toàn thông tin mạng là gì theo quy định của luật?",
+    "expected_answer": "An toàn thông tin mạng là sự bảo vệ thông tin, hệ thống thông tin trên mạng khỏi bị truy cập, sử dụng, tiết lộ, gián đoạn, sửa đổi hoặc phá hoại trái phép nhằm bảo đảm tính nguyên vẹn, tính bảo mật và tính sẵn sàng của thông tin.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["an toàn thông tin mạng", "truy cập", "sử dụng", "nguyên vẹn", "bảo mật", "sẵn sàng"]
+  },
+  {
+    "question_id": "Q002",
+    "question": "Các nguyên tắc cơ bản về an toàn thông tin mạng bao gồm những nội dung nào?",
+    "expected_answer": "Bảo đảm an toàn thông tin mạng là trách nhiệm của cơ quan, tổ chức, cá nhân; kết hợp chặt chẽ giữa bảo đảm an toàn thông tin mạng và phát triển kinh tế - xã hội...",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["nguyên tắc", "trách nhiệm", "tổ chức", "cá nhân", "phát triển kinh tế"]
+  },
+  {
+    "question_id": "Q003",
+    "question": "Hành vi nào bị nghiêm cấm liên quan đến việc thu hồi và sử dụng trái phép thông tin cá nhân?",
+    "expected_answer": "Nghiêm cấm thu thập, sử dụng, phát tán, kinh doanh trái pháp luật thông tin cá nhân của người khác trên mạng.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["nghiêm cấm", "thu thập", "sử dụng", "phát tán", "thông tin cá nhân"]
+  },
+  {
+    "question_id": "Q004",
+    "question": "Trách nhiệm của chủ quản hệ thống thông tin trong việc bảo đảm an toàn thông tin mạng là gì?",
+    "expected_answer": "Chủ quản hệ thống thông tin có trách nhiệm áp dụng các biện pháp quản lý và kỹ thuật để bảo vệ hệ thống thông tin thuộc phạm vi quản lý.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["chủ quản", "hệ thống thông tin", "biện pháp", "quản lý", "kỹ thuật"]
+  },
+  {
+    "question_id": "Q005",
+    "question": "Hệ thống thông tin được phân thành mấy cấp độ an toàn?",
+    "expected_answer": "Hệ thống thông tin được phân thành 5 cấp độ an toàn thông tin mạng.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["phân thành", "cấp độ", "5 cấp độ", "an toàn thông tin"]
+  },
+  {
+    "question_id": "Q006",
+    "question": "Mật mã dân sự bao gồm những sản phẩm và dịch vụ nào?",
+    "expected_answer": "Mật mã dân sự bao gồm sản phẩm mật mã dân sự và dịch vụ mật mã dân sự phục vụ cơ quan, tổ chức, cá nhân.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["mật mã dân sự", "sản phẩm", "dịch vụ", "tổ chức", "cá nhân"]
+  },
+  {
+    "question_id": "Q007",
+    "question": "Điều kiện để doanh nghiệp được cấp Giấy phép kinh doanh sản phẩm, dịch vụ mật mã dân sự là gì?",
+    "expected_answer": "Doanh nghiệp phải có nhân lực đáp ứng yêu cầu chuyên môn, thiết bị và phương tiện kỹ thuật phù hợp, có phương án bảo mật.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["giấy phép kinh doanh", "mật mã dân sự", "nhân lực", "thiết bị", "phương án bảo mật"]
+  },
+  {
+    "question_id": "Q008",
+    "question": "Khi phát hiện sự cố an toàn thông tin mạng, tổ chức phải xử lý như thế nào?",
+    "expected_answer": "Phải áp dụng ngay biện pháp ngăn chặn, khắc phục sự cố và báo cáo cơ quan có thẩm quyền.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["sự cố", "ngăn chặn", "khắc phục", "báo cáo", "cơ quan có thẩm quyền"]
+  },
+  {
+    "question_id": "Q009",
+    "question": "Trách nhiệm của Bộ Thông tin và Truyền thông trong quản lý nhà nước về an toàn thông tin mạng là gì?",
+    "expected_answer": "Chịu trách nhiệm trước Chính phủ thực hiện quản lý nhà nước về an toàn thông tin mạng.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["bộ thông tin và truyền thông", "quản lý nhà nước", "chính phủ"]
+  },
+  {
+    "question_id": "Q010",
+    "question": "Thế nào là thông tin mạng độc hại và các hành vi phát tán thông tin này bị xử lý ra sao?",
+    "expected_answer": "Thông tin mạng độc hại là thông tin có nội dung kích động, phá hoại, xuyên tạc; bị xử lý nghiêm theo quy định pháp luật.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "multi-hop",
+    "expected_keywords": ["thông tin mạng độc hại", "kích động", "xuyên tạc", "xử lý"]
+  },
+  {
+    "question_id": "Q011",
+    "question": "Quy trình xử lý đối với hệ thống thông tin cấp độ 4 và cấp độ 5 yêu cầu những cơ quan nào phối hợp?",
+    "expected_answer": "Yêu cầu sự phối hợp giữa cơ quan chủ quản, Bộ Công an, Bộ Quốc phòng và Bộ Thông tin và Truyền thông.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "multi-hop",
+    "expected_keywords": ["cấp độ 4", "cấp độ 5", "bộ công an", "bộ quốc phòng", "bộ thông tin và truyền thông"]
+  },
+  {
+    "question_id": "Q012",
+    "question": "Doanh nghiệp cung cấp dịch vụ viễn thông, internet có trách nhiệm gì trong việc bảo vệ thông tin cá nhân của người sử dụng?",
+    "expected_answer": "Phải áp dụng các biện pháp kỹ thuật và quản lý cần thiết để bảo đảm an toàn thông tin cá nhân trên hệ thống của mình.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "multi-hop",
+    "expected_keywords": ["doanh nghiệp viễn thông", "internet", "thông tin cá nhân", "biện pháp kỹ thuật"]
+  },
+  {
+    "question_id": "Q013",
+    "question": "Việc kiểm tra an toàn thông tin mạng đối với hệ thống thông tin cấp độ 3 trở lên được thực hiện ra sao?",
+    "expected_answer": "Phải được kiểm tra đánh giá định kỳ về an toàn thông tin mạng theo quy định.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["kiểm tra", "cấp độ 3", "định kỳ", "an toàn thông tin mạng"]
+  },
+  {
+    "question_id": "Q014",
+    "question": "Thẩm quyền cấp, gia hạn, sửa đổi và thu hồi Giấy phép kinh doanh sản phẩm, dịch vụ mật mã dân sự thuộc về cơ quan nào?",
+    "expected_answer": "Thuộc thẩm quyền của cơ quan quản lý nhà nước về mật mã dân sự theo quy định.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["thẩm quyền", "giấy phép kinh doanh", "mật mã dân sự", "cấp", "thu hồi"]
+  },
+  {
+    "question_id": "Q015",
+    "question": "Các hành vi phá hoại cơ sở hạ tầng thông tin quốc gia bị xử lý như thế nào theo Luật?",
+    "expected_answer": "Bị xử lý kỷ luật, xử phạt vi phạm hành chính hoặc truy cứu trách nhiệm hình sự tùy theo mức độ vi phạm.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["phá hoại", "cơ sở hạ tầng", "xử lý", "trách nhiệm hình sự", "hành chính"]
+  },
+  {
+    "question_id": "Q016",
+    "question": "Trung tâm ứng cứu khẩn cấp máy tính Việt Nam (VNCERT) có chức năng chính là gì?",
+    "expected_answer": "VNCERT có chức năng điều phối các hoạt động ứng cứu sự cố an toàn thông tin mạng trên toàn quốc.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["vncert", "ứng cứu khẩn cấp", "điều phối", "sự cố", "an toàn thông tin"]
+  },
+  {
+    "question_id": "Q017",
+    "question": "Điều kiện kinh doanh dịch vụ an toàn thông tin mạng bao gồm những tiêu chuẩn nào về nhân lực?",
+    "expected_answer": "Nhân lực phải có văn bằng, chứng chỉ chuyên môn phù hợp về an toàn thông tin hoặc công nghệ thông tin.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["kinh doanh dịch vụ", "nhân lực", "văn bằng", "chứng chỉ", "chuyên môn"]
+  },
+  {
+    "question_id": "Q018",
+    "question": "Nguyên tắc xử lý sự cố an toàn thông tin mạng ưu tiên điều gì?",
+    "expected_answer": "Ưu tiên bảo đảm hoạt động bình thường của hệ thống thông tin và bảo vệ dữ liệu quan trọng.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["nguyên tắc xử lý", "sự cố", "ưu tiên", "hoạt động bình thường"]
+  },
+  {
+    "question_id": "Q019",
+    "question": "Việc nhập khẩu sản phẩm mật mã dân sự phục vụ nhu cầu cá nhân hoặc tổ chức được quy định như thế nào?",
+    "expected_answer": "Phải có giấy phép nhập khẩu do cơ quan có thẩm quyền cấp.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["nhập khẩu", "sản phẩm mật mã dân sự", "nhu cầu cá nhân", "giấy phép"]
+  },
+  {
+    "question_id": "Q020",
+    "question": "Hành vi phát tán mã độc (virus, trojan, spyware) trên không gian mạng bị xử lý ra sao?",
+    "expected_answer": "Bị nghiêm cấm và xử lý theo quy định của pháp luật về vi phạm hành chính hoặc hình sự.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["phát tán mã độc", "virus", "trojan", "spyware", "nghiêm cấm"]
+  },
+  {
+    "question_id": "Q021",
+    "question": "Trách nhiệm của cơ quan báo chí, truyền thông trong việc phổ biến kiến thức an toàn thông tin mạng là gì?",
+    "expected_answer": "Có trách nhiệm tuyên truyền, phổ biến kiến thức và pháp luật về an toàn thông tin mạng cho người dân.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["báo chí", "truyền thông", "phổ biến kiến thức", "tuyên truyền"]
+  },
+  {
+    "question_id": "Q022",
+    "question": "Quy định về việc bảo vệ thông tin cá nhân khi thu thập trên môi trường mạng đòi hỏi điều gì từ phía doanh nghiệp?",
+    "expected_answer": "Phải thông báo cho người sử dụng về hình thức, phạm vi và mục đích thu thập, sử dụng thông tin cá nhân.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["bảo vệ thông tin cá nhân", "thu thập", "thông báo", "mục đích"]
+  },
+  {
+    "question_id": "Q023",
+    "question": "Việc hợp tác quốc tế trong lĩnh vực an toàn thông tin mạng dựa trên những nguyên tắc nào?",
+    "expected_answer": "Dựa trên nguyên tắc tôn trọng độc lập, chủ quyền, bình đẳng và cùng có lợi theo pháp luật Việt Nam và quốc tế.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["hợp tác quốc tế", "tôn trọng độc lập", "chủ quyền", "bình đẳng"]
+  },
+  {
+    "question_id": "Q024",
+    "question": "Chính sách của Nhà nước đối với hoạt động nghiên cứu, phát triển sản phẩm, dịch vụ an toàn thông tin mạng là gì?",
+    "expected_answer": "Nhà nước tạo điều kiện và có chính sách ưu đãi cho hoạt động nghiên cứu, phát triển sản phẩm, dịch vụ an toàn thông tin mạng.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["chính sách của nhà nước", "nghiên cứu", "phát triển", "ưu đãi"]
+  },
+  {
+    "question_id": "Q025",
+    "question": "Trách nhiệm của cá nhân khi tham gia không gian mạng để bảo đảm an toàn thông tin là gì?",
+    "expected_answer": "Tuân thủ quy định pháp luật về an toàn thông tin mạng, bảo vệ mật khẩu và thông tin tài khoản cá nhân.",
+    "expected_source_ids": ["doc_an_toan_thong_tin_01"],
+    "answerable": true,
+    "category": "direct",
+    "expected_keywords": ["trách nhiệm cá nhân", "tham gia không gian mạng", "tuân thủ quy định", "bảo vệ mật khẩu"]
+  },
+  {
+    "question_id": "Q026",
+    "question": "Mức lương tối thiểu vùng năm 2026 áp dụng cho người lao động tại doanh nghiệp tư nhân là bao nhiêu?",
+    "expected_answer": "Nằm ngoài phạm vi tài liệu.",
+    "expected_source_ids": [],
+    "answerable": false,
+    "category": "unanswerable",
+    "expected_keywords": []
+  },
+  {
+    "question_id": "Q027",
+    "question": "Thủ tục đăng ký kết hôn có yếu tố nước ngoài tại Ủy ban nhân dân cấp tỉnh diễn ra trong bao nhiêu ngày?",
+    "expected_answer": "Nằm ngoài phạm vi tài liệu.",
+    "expected_source_ids": [],
+    "answerable": false,
+    "category": "unanswerable",
+    "expected_keywords": []
+  },
+  {
+    "question_id": "Q028",
+    "question": "Quy định về thời gian nghỉ thai sản dành cho lao động nam giúp vợ sinh con theo Luật Lao động là mấy ngày?",
+    "expected_answer": "Nằm ngoài phạm vi tài liệu.",
+    "expected_source_ids": [],
+    "answerable": false,
+    "category": "unanswerable",
+    "expected_keywords": []
+  },
+  {
+    "question_id": "Q029",
+    "question": "Thuế suất thuế giá trị gia tăng (VAT) áp dụng cho mặt hàng xe ô tô điện nhập khẩu hiện nay là bao nhiêu phần trăm?",
+    "expected_answer": "Nằm ngoài phạm vi tài liệu.",
+    "expected_source_ids": [],
+    "answerable": false,
+    "category": "unanswerable",
+    "expected_keywords": []
+  },
+  {
+    "question_id": "Q030",
+    "question": "Quy định về mức xử phạt vi phạm nồng độ cồn khi điều khiển xe mô tô tham gia giao thông đường bộ là bao nhiêu?",
+    "expected_answer": "Nằm ngoài phạm vi tài liệu.",
+    "expected_source_ids": [],
+    "answerable": false,
+    "category": "unanswerable",
+    "expected_keywords": []
+  }
+]

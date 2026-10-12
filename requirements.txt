@@ -1,0 +1,24 @@
+# --- FastAPI & Web Framework ---
+fastapi>=0.100.0
+uvicorn>=0.22.0
+pydantic>=2.0.0
+requests>=2.31.0
+streamlit>=1.28.0
+
+# --- Parsing & Document Ingestion ---
+PyMuPDF>=1.22.0          # Dành cho PDFParser
+python-docx>=0.11.2      # Dành cho xử lý file DOCX (nếu mở rộng)
+beautifulsoup4>=4.12.2   # Dành cho xử lý file HTML/Markdown
+
+# --- Chunking & Vector Search ---
+numpy>=1.24.0
+sentence-transformers>=2.2.2  # Dành cho TextEmbedder và CrossEncoder Reranker
+rank-bm25>=0.2.2              # Dành cho Keyword Retrieval (BM25)
+
+# --- LLM & API Integration ---
+openai>=1.0.0                 # Dành cho gọi LLM API (Groq/OpenAI compatible)
+
+# --- Evaluation & Utilities ---
+jsonlines>=3.1.0
+pandas>=2.0.0
+pytest>=7.3.0

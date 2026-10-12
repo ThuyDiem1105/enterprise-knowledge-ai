@@ -1,0 +1,22 @@
+# Sử dụng Python image chính thức gọn nhẹ
+FROM python:3.10-slim
+
+# Thiết lập thư mục làm việc bên trong container
+WORKDIR /app
+
+# Cài đặt các gói hệ thống cần thiết (nếu có)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Cài đặt dependencies Python
+COPY pyproject.toml . 
+# (Hoặc requirements.txt nếu bạn dùng pip truyền thống)
+RUN pip install --no-cache-dir fastapi uvicorn pydantic sentence-transformers pymupdf rank-bm25 openai numpy
+
+# Sao chép toàn bộ mã nguồn vào container
+COPY . .
+
+# Khởi chạy FastAPI server
+EXPOSE 8000
+CMD ["uvicorn", "apps.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
