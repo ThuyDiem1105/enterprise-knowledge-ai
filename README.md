@@ -17,7 +17,9 @@ Trong môi trường doanh nghiệp hiện đại, việc tra cứu khối lư�
 * **Data Processing & Evaluation:** Pandas, PyPDF, Rouge-Score (Đánh giá định lượng ROUGE-1, ROUGE-L)
 
 ## 📂 Cấu trúc Thư mục Dự án
-D:\enterprise-knowledge-ai\
+```text
+D:\enterprise-knowledge-ai
+|
 ├── apps/
 │   ├── api/main.py              # FastAPI Backend (Quản lý API, phân quyền, chat endpoint)
 │   └── web/app.py               # Streamlit Frontend (Giao diện người dùng trực quan)
@@ -27,7 +29,7 @@ D:\enterprise-knowledge-ai\
 ├── run_eval.py                  # Script chạy đánh giá định lượng (ROUGE & Citation Valid)
 ├── requirements.txt             # Danh sách thư viện phụ thuộc
 └── README.md                    # Tài liệu hướng dẫn dự án
-
+```
 ## 🚀 Hướng dẫn Cài đặt và Triển khai
 1. Cài đặt Python 3.10+ và Ollama (`ollama pull llama3:8b` hoặc `ollama pull llama3.2:3b`).
 2. Tạo môi trường ảo và cài đặt thư viện:
