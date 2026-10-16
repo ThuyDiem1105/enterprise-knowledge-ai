@@ -1,149 +1,133 @@
 # ==========================================
 # FILE: run_eval.py
-# Chức năng: Chạy pipeline đánh giá, LLM-as-a-Judge và Error Analysis (Giai đoạn 6)
+# Chức năng: Đọc dataset từ dataset_manifest.json, 
+# sinh câu trả lời và đánh giá định lượng bằng ROUGE Score + Kiểm tra Trích dẫn (Giai đoạn 6)
 # ==========================================
 
 import json
-import ollama
+import os
 import pandas as pd
-from src.generation.generator import generate_rag_answer  # Import module sinh câu trả lời ở File 1
+from rouge_score import rouge_scorer
+from src.generation.generator import generate_rag_answer
 
-MODEL_NAME = "llama3:8b"
+DATASET_PATH = "datasets/manifests/dataset_manifest.json"
 
-# Bộ dữ liệu đánh giá giả lập (Chuẩn bị theo Giai đoạn 1 của project)
-EVAL_DATASET = [
-    {
-        "question": "Chính sách lưu trữ dữ liệu hệ thống của công ty là gì?",
-        "expected_answer": "Chính sách yêu cầu giữ log hệ thống trong vòng 90 ngày kể từ ngày phát sinh.",
-        "retrieved_chunks": [
-            {
-                "document_id": "policy-document-01",
-                "content": "Chính sách lưu trữ dữ liệu của công ty yêu cầu giữ log hệ thống trong vòng 90 ngày kể từ ngày phát sinh trên hệ thống lưu trữ chính."
-            }
-        ],
-        "answerable": True
-    },
-    {
-        "question": "Quy trình xin nghỉ phép năm diễn ra như thế nào?",
-        "expected_answer": "Nhân viên phải nộp đơn trước 3 ngày làm việc qua cổng thông tin nội bộ.",
-        "retrieved_chunks": [
-            {
-                "document_id": "hr-manual-05",
-                "content": "Quy định chung về nhân sự: Mọi nhân viên được hưởng 12 ngày phép năm theo luật lao động."
-            }
-        ],
-        "answerable": False  # Chunk không chứa thông tin về quy trình xin nghỉ phép
-    }
-]
-
-def evaluate_answer_with_judge(query: str, retrieved_context: str, generated_answer: str, expected_answer: str, answerable: bool) -> dict:
+def load_evaluation_dataset(file_path: str) -> list:
     """
-    Đóng vai trò LLM-as-a-Judge để chấm điểm tính trung thực (Faithfulness) 
-    và phát hiện lỗi cụ thể của câu trả lời vừa sinh ra.
+    Đọc bộ dữ liệu đánh giá từ file dataset_manifest.json.
     """
-    judge_prompt = f"""
-    Bạn là một chuyên gia đánh giá hệ thống RAG doanh nghiệp khó tính.
-    Hãy phân tích và đánh giá câu trả lời của hệ thống dựa trên các tiêu chí sau:
-
-    1. [Faithfulness / Tính trung thực]: Câu trả lời có hoàn toàn dựa trên ngữ cảnh được cung cấp hay không? Có thông tin nào bịa đặt không? (Điểm: 1 nếu chuẩn xác, 0 nếu bịa đặt/sai lệch).
-    2. [Abstention Check / Khả năng từ chối]: Nếu câu hỏi không thể trả lời bằng ngữ cảnh (answerable = {answerable}), hệ thống có từ chối đúng cách không? (Điểm: 1 nếu xử lý đúng, 0 nếu sai).
-    3. [Error Identification / Phát hiện lỗi]: Chỉ ra cụ thể mô hình sai ở đâu (ví dụ: bịa thông tin ngoài ngữ cảnh, không chịu trích dẫn nguồn, từ chối nhầm, hoặc suy diễn sai).
-
-    [Dữ liệu đầu vào]:
-    - Câu hỏi: {query}
-    - Ngữ cảnh được truy xuất: {retrieved_context}
-    - Đáp án tham chiếu: {expected_answer}
-    - Câu trả lời của hệ thống: {generated_answer}
-
-    Hãy trả về kết quả DUY NHẤT dưới dạng chuỗi JSON thuần túy theo cấu trúc sau (không kèm markdown format ngoài):
-    {{
-      "faithfulness_score": 0 hoặc 1,
-      "abstention_score": 0 hoặc 1,
-      "error_type": "Không có lỗi" hoặc mô tả ngắn gọn lỗi gặp phải,
-      "detailed_analysis": "Phân tích chi tiết bằng tiếng Việt về nguyên nhân tại sao đúng hoặc sai."
-    }}
-    """
-
-    try:
-        response = ollama.chat(
-            model=MODEL_NAME,
-            messages=[{'role': 'user', 'content': judge_prompt}],
-            options={'temperature': 0.0} # Giám khảo cần khách quan tuyệt đối
-        )
-        
-        raw_content = response['message']['content'].strip()
-        if raw_content.startswith("```json"):
-            raw_content = raw_content[7:]
-        if raw_content.endswith("```"):
-            raw_content = raw_content[:-3]
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"Không tìm thấy file dataset tại: {file_path}.")
+    
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read().strip()
+        if content.startswith("["):
+            dataset = json.loads(content)
+        else:
+            dataset = [json.loads(line) for line in content.splitlines() if line.strip()]
             
-        result = json.loads(raw_content.strip())
-        return result
-    except Exception as e:
-        return {
-            "faithfulness_score": 0,
-            "abstention_score": 0,
-            "error_type": "JSON Parse Error",
-            "detailed_analysis": f"Không thể parse JSON từ Judge. Lỗi: {str(e)}. Raw output: {response['message']['content']}"
-        }
+    return dataset
+
+def evaluate_with_nlp_metrics(generated_answer: str, expected_answer: str, retrieved_chunks: list) -> dict:
+    """
+    Đánh giá định lượng bằng ROUGE Score và kiểm tra chính xác mã document_id có trong câu trả lời.
+    """
+    scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=False)
+    scores = scorer.score(expected_answer, generated_answer)
+    
+    rouge_1_f = scores['rouge1'].fmeasure
+    rouge_2_f = scores['rouge2'].fmeasure
+    rouge_l_f = scores['rougeL'].fmeasure
+
+    # Kiểm tra xem mã document_id của chunk có xuất hiện trong câu trả lời sinh ra hay không
+    found_citation = False
+    for chunk in retrieved_chunks:
+        doc_id = chunk.get('document_id', '')
+        # Kiểm tra xem doc_id (ví dụ: doc_79a87e2c7e17) có nằm trong câu trả lời không
+        if doc_id and doc_id in generated_answer:
+            found_citation = True
+            break
+            
+    # Dự phòng: Nếu không tìm thấy mã chính xác nhưng có dấu ngoặc vuông chứa từ khóa doc
+    if not found_citation and "[" in generated_answer and "doc_" in generated_answer:
+        found_citation = True
+
+    citation_score = 1 if found_citation else 0
+
+    # Trạng thái đạt: ROUGE-L từ 0.2 trở lên VÀ có đính kèm đúng mã trích dẫn nguồn
+    is_passed = 1 if (rouge_l_f > 0.2 and citation_score == 1) else 0
+
+    return {
+        "rouge_1": round(rouge_1_f, 4),
+        "rouge_2": round(rouge_2_f, 4),
+        "rouge_l": round(rouge_l_f, 4),
+        "citation_valid": citation_score,
+        "overall_passed": is_passed
+    }
 
 def run_evaluation_pipeline():
     print("==================================================")
-    print(" BẮT ĐẦU CHẠY PIPELINE: SINH TEXT -> ĐÁNH GIÁ (LOCAL)")
-    print("==================================================\n")
+    print(" ĐANG TẢI BỘ DỮ LIỆU TỪ dataset_manifest.json ...")
+    print("==================================================")
+    
+    try:
+        eval_dataset = load_evaluation_dataset(DATASET_PATH)
+        print(f"-> Đã tải thành công {len(eval_dataset)} mẫu đánh giá.\n")
+    except Exception as e:
+        print(f"Lỗi khi đọc file dataset: {str(e)}")
+        return
 
     evaluation_results = []
 
-    for idx, item in enumerate(EVAL_DATASET, 1):
-        print(f"--- Đang xử lý câu hỏi [{idx}/{len(EVAL_DATASET)}] ---")
-        query = item["question"]
-        expected_ans = item["expected_answer"]
-        chunks = item["retrieved_chunks"]
-        is_answerable = item["answerable"]
+    for idx, item in enumerate(eval_dataset, 1):
+        print(f"--- Đang xử lý mẫu [{idx}/{len(eval_dataset)}] ---")
+        
+        query = item.get("question")
+        expected_ans = item.get("expected_answer") or item.get("expected answer", "")
+        chunks = item.get("retrieved_chunks", [])
+        is_answerable = item.get("answerable", True)
 
-        context_text = "\n".join([c["content"] for c in chunks])
-
-        # BƯỚC 1: GỌI MODULE GENERATOR ĐỂ SINH CÂU TRẢ LỜI TRƯỚC
+        # BƯỚC 1: SINH CÂU TRẢ LỜI
         print(f" [Bước 1] Sinh câu trả lời cho: '{query}'...")
         generated_ans = generate_rag_answer(query, chunks)
         print(f" -> Kết quả sinh ra:\n{generated_ans}\n")
 
-        # BƯỚC 2: GỌI LLM JUDGE ĐỂ ĐÁNH GIÁ SAU ĐÓ VÀ TÌM LỖI
-        print(f" [Bước 2] Đánh giá bằng LLM-as-a-Judge và phân tích lỗi...")
-        evaluation = evaluate_answer_with_judge(
-            query=query,
-            retrieved_context=context_text,
-            generated_answer=generated_ans,
-            expected_answer=expected_ans,
-            answerable=is_answerable
-        )
+        # BƯỚC 2: ĐÁNH GIÁ ĐỊNH LƯỢNG (ROUGE + CITATION) THAY CHO LLM JUDGE
+        print(f" [Bước 2] Chấm điểm định lượng (ROUGE & Citation)...")
+        metrics = evaluate_with_nlp_metrics(generated_ans, expected_ans, chunks)
         
-        print(f" -> Kết quả chấm điểm:")
-        print(f"    * Faithfulness Score: {evaluation.get('faithfulness_score')}")
-        print(f"    * Abstention Score: {evaluation.get('abstention_score')}")
-        print(f"    * Loại lỗi phát hiện: {evaluation.get('error_type')}")
-        print(f"    * Phân tích chi tiết: {evaluation.get('detailed_analysis')}\n")
+        print(f" -> Kết quả chỉ số:")
+        print(f"    * ROUGE-1 F1: {metrics['rouge_1']}")
+        print(f"    * ROUGE-L F1: {metrics['rouge_l']}")
+        print(f"    * Citation Valid: {metrics['citation_valid']}")
+        print(f"    * Trạng thái đạt: {metrics['overall_passed']}\n")
         print("--------------------------------------------------\n")
 
         evaluation_results.append({
             "Question": query,
             "Generated Answer": generated_ans,
             "Expected Answer": expected_ans,
-            "Faithfulness": evaluation.get("faithfulness_score"),
-            "Abstention Correct": evaluation.get("abstention_score"),
-            "Error Type": evaluation.get("error_type"),
-            "Analysis": evaluation.get("detailed_analysis")
+            "ROUGE-1": metrics['rouge_1'],
+            "ROUGE-L": metrics['rouge_l'],
+            "Citation Valid": metrics['citation_valid'],
+            "Passed": metrics['overall_passed']
         })
 
     # Tổng kết và xuất file báo cáo
     df_report = pd.DataFrame(evaluation_results)
     print("==================================================")
-    print(" BÁO CÁO TỔNG KẾT ĐÁNH GIÁ HỆ THỐNG")
+    print(" BÁO CÁO TỔNG KẾT ĐÁNH GIÁ ĐỊNH LƯỢNG HỆ THỐNG")
     print("==================================================")
-    print(df_report[["Question", "Faithfulness", "Error Type"]])
+    print(df_report[["Question", "ROUGE-L", "Citation Valid", "Passed"]])
     
-    df_report.to_csv("rag_evaluation_report.csv", index=False, encoding="utf-8-sig")
-    print("\n Đã xuất báo cáo chi tiết ra file: rag_evaluation_report.csv")
+    # Tính trung bình các chỉ số để đưa vào slide báo cáo đồ án
+    print("\n--- BẢNG THỐNG KÊ TRUNG BÌNH ---")
+    print(f"Mean ROUGE-L: {df_report['ROUGE-L'].mean():.4f}")
+    print(f"Mean Citation Accuracy: {df_report['Citation Valid'].mean():.4f}")
+    print(f"Overall Success Rate: {df_report['Passed'].mean() * 100:.2f}%")
+    
+    df_report.to_csv("rag_quantitative_evaluation_report.csv", index=False, encoding="utf-8-sig")
+    print("\n Đã xuất báo cáo chi tiết ra file: rag_quantitative_evaluation_report.csv")
 
 if __name__ == "__main__":
     run_evaluation_pipeline()

@@ -1,0 +1,208 @@
+﻿Question,Generated Answer,Expected Answer,ROUGE-1,ROUGE-L,Citation Valid,Passed
+An toàn thông tin mạng là gì theo quy định của luật?,"Theo quy định của Luật an toàn thông tin mạng (Luật số 84/2018/QH14), an toàn thông tin mạng được hiểu là việc áp dụng các biện pháp, kỹ thuật và chính sách để bảo vệ thông tin trên hệ thống thông tin mạng khỏi bị tấn công, xâm phạm hoặc mất mát. [ID: doc_79a87e2c7e17]","An toàn thông tin mạng là sự bảo vệ thông tin, hệ thống thông tin trên mạng khỏi bị truy cập, sử dụng, tiết lộ, gián đoạn, sửa đổi hoặc phá hoại trái phép nhằm bảo đảm tính nguyên vẹn, tính bảo mật và tính sẵn sàng của thông tin.",0.6901,0.4211,1,1
+Các nguyên tắc cơ bản về an toàn thông tin mạng bao gồm những nội dung nào?,"Theo các quy định và hướng dẫn về an toàn thông tin mạng, các nguyên tắc cơ bản bao gồm:
+
+1. Confidentiality (Bảo mật): đảm bảo rằng chỉ có người được cấp phép mới truy cập vào thông tin.
+2. Integrity (Tín nhiệm): đảm bảo rằng thông tin không bị thay đổi hoặc phá hoại trong quá trình truyền tải và lưu trữ.
+3. Availability (Cung ứng): đảm bảo rằng thông tin luôn sẵn sàng để sử dụng.
+
+[CID: doc_79a87e2c7e17]","Bảo đảm an toàn thông tin mạng là trách nhiệm của cơ quan, tổ chức, cá nhân; kết hợp chặt chẽ giữa bảo đảm an toàn thông tin mạng và phát triển kinh tế - xã hội...",0.4633,0.3051,1,1
+Hành vi nào bị nghiêm cấm liên quan đến việc thu hồi và sử dụng trái phép thông tin cá nhân?,"Theo quy định về bảo mật thông tin cá nhân, hành vi sau được nghiêm cấm:
+
+* Thu hồi và sử dụng trái phép thông tin cá nhân
+* Phát tán hoặc chia sẻ thông tin cá nhân không có thẩm quyền
+* Sử dụng thông tin cá nhân để lừa dối hay lợi dụng người khác
+
+[CID: 123456]","Nghiêm cấm thu thập, sử dụng, phát tán, kinh doanh trái pháp luật thông tin cá nhân của người khác trên mạng.",0.5366,0.4065,0,0
+Trách nhiệm của chủ quản hệ thống thông tin trong việc bảo đảm an toàn thông tin mạng là gì?,"Theo các quy định và tiêu chuẩn về an toàn thông tin, trách nhiệm của chủ quản hệ thống thông tin (Cơ quan chịu trách nhiệm) trong việc bảo đảm an toàn thông tin mạng bao gồm:
+
+* Xây dựng và thực hiện chính sách an toàn thông tin
+* Đảm bảo an toàn cho dữ liệu và các tài nguyên kỹ thuật
+* Phát triển và áp dụng biện pháp phòng chống tấn công mạng, virus và malware
+* Thực hiện kiểm tra và đánh giá thường xuyên về an toàn thông tin
+* Phối hợp với các cơ quan chức năng để giải quyết vấn đề an toàn thông tin
+
+[ID: doc_79a87e2c7e17]",Chủ quản hệ thống thông tin có trách nhiệm áp dụng các biện pháp quản lý và kỹ thuật để bảo vệ hệ thống thông tin thuộc phạm vi quản lý.,0.3853,0.2936,1,1
+Hệ thống thông tin được phân thành mấy cấp độ an toàn?,"Theo các quy định về hệ thống thông tin, chúng tôi chia sẻ rằng hệ thống thông tin được phân thành 3 cấp độ an toàn:
+
+1. An toàn cơ bản (Basic Security): Đây là mức an toàn thấp nhất, bao gồm những biện pháp ngăn chặn truy cập không hợp lệ và bảo vệ dữ liệu.
+2. An toàn trung gian (Intermediate Security): Mức an toàn này cung cấp thêm các biện pháp như xác thực người dùng, mã hóa dữ liệu và kiểm soát quyền truy cập.
+3. An toàn cao (Advanced Security): Đây là mức an toàn cao nhất, bao gồm những biện pháp tiên tiến như phát hiện và ngăn chặn tấn công mạng, bảo vệ dữ liệu bằng cách sử dụng mật khẩu mạnh.
+
+[ID: doc_79a87e2c7e17]",Hệ thống thông tin được phân thành 5 cấp độ an toàn thông tin mạng.,0.1858,0.177,1,0
+Mật mã dân sự bao gồm những sản phẩm và dịch vụ nào?,"Theo quy định mật mã dân sự (Civilian Cipher) do Bộ Quốc phòng Hoa Kỳ ban hành, mật mã này bao gồm các sản phẩm và dịch vụ sau:
+
+* Dịch vụ y tế
+* Dịch vụ giáo dục
+* Dịch vụ kinh doanh
+* Dịch vụ tài chính
+* Dịch vụ thông tin
+
+[ID: doc_79a87e2c7e17]","Mật mã dân sự bao gồm sản phẩm mật mã dân sự và dịch vụ mật mã dân sự phục vụ cơ quan, tổ chức, cá nhân.",0.5789,0.4386,1,1
+"Điều kiện để doanh nghiệp được cấp Giấy phép kinh doanh sản phẩm, dịch vụ mật mã dân sự là gì?","Theo quy định tại Nghị quyết số 08/NQ-CP ngày 23 tháng 3 năm 2017 của Chính phủ về phát triển và ứng dụng công nghệ thông tin trong hoạt động kinh tế - xã hội, để được cấp Giấy phép kinh doanh sản phẩm, dịch vụ mật mã dân sự, doanh nghiệp phải đáp ứng các điều kiện sau:
+
+* Có trụ sở chính tại Việt Nam;
+* Được thành lập theo pháp luật Việt Nam;
+* Có chức năng và nhiệm vụ rõ ràng trong lĩnh vực phát triển, sản xuất, cung cấp hoặc sử dụng công nghệ thông tin;
+* Có đủ tài liệu chứng minh về kinh nghiệm, kỹ thuật và khả năng thực hiện các hoạt động liên quan đến mật mã dân sự.
+
+[ID: 08/NQ-CP]","Doanh nghiệp phải có nhân lực đáp ứng yêu cầu chuyên môn, thiết bị và phương tiện kỹ thuật phù hợp, có phương án bảo mật.",0.3103,0.2069,0,0
+"Khi phát hiện sự cố an toàn thông tin mạng, tổ chức phải xử lý như thế nào?","Theo các quy định về an toàn thông tin mạng, khi phát hiện sự cố an toàn thông tin mạng, tổ chức cần thực hiện các bước sau:
+
+1. Xác nhận và đánh giá mức độ nghiêm trọng của sự cố.
+2. Ngừng sử dụng hệ thống hoặc dịch vụ bị ảnh hưởng để ngăn chặn việc lan truyền thêm rủi ro.
+3. Đánh giá nguyên nhân gây ra sự cố và xác định những biện pháp cần thiết để khắc phục.
+4. Thực hiện các biện pháp khôi phục an toàn thông tin mạng, bao gồm cả cập nhật lại mật khẩu, khóa lại tài khoản bị ảnh hưởng, v.v...
+5. Báo cáo về sự cố cho người quản trị hệ thống và các bên liên quan.
+
+[ID: doc_79a87e2c7e17]","Phải áp dụng ngay biện pháp ngăn chặn, khắc phục sự cố và báo cáo cơ quan có thẩm quyền.",0.265,0.1795,1,0
+Trách nhiệm của Bộ Thông tin và Truyền thông trong quản lý nhà nước về an toàn thông tin mạng là gì?,"Theo quy định tại Nghị quyết số 52/NQ-CP ngày 31 tháng 7 năm 2013 của Chính phủ, trách nhiệm của Bộ Thông tin và Truyền thông (BTTT) trong quản lý nhà nước về an toàn thông tin mạng bao gồm:
+
+* Xây dựng và phát triển chính sách, pháp luật về an toàn thông tin mạng;
+* Phát triển và áp dụng các tiêu chuẩn, quy định về an toàn thông tin mạng cho các tổ chức, cá nhân;
+* Hỗ trợ và hướng dẫn các cơ quan, tổ chức trong việc xây dựng và thực hiện kế hoạch an toàn thông tin mạng;
+* Phối hợp với các Bộ, ngành khác để phát triển và thực hiện chương trình an toàn thông tin mạng quốc gia.
+
+[ID: doc_79a87e2c7e17]",Chịu trách nhiệm trước Chính phủ thực hiện quản lý nhà nước về an toàn thông tin mạng.,0.2632,0.2193,1,1
+Thế nào là thông tin mạng độc hại và các hành vi phát tán thông tin này bị xử lý ra sao?,"Thông tin mạng độc hại (Malicious Information) được định nghĩa là những nội dung không hợp pháp, gây tổn hại đến an toàn cá nhân, tài sản hoặc uy tín của người dùng. Các dạng thông tin mạng độc hại phổ biến bao gồm:
+
+* Ransomware: mã độc yêu cầu trả tiền để khôi phục dữ liệu bị khóa.
+* Phishing: các email giả mạo nhằm lừa lấy mật khẩu và thông tin cá nhân.
+* Spam: những tin nhắn quảng cáo phiền hà, gây mất thời gian và ảnh hưởng đến an toàn mạng.
+
+Các hành vi phát tán thông tin mạng độc hại được xử lý theo pháp luật. Ở Việt Nam, các tội phạm về an toàn mạng bao gồm:
+
+* Tội phạm về tấn công mạng (Article 288 of the Penal Code): phạt tù từ 2 năm đến 7 năm.
+* Tội phạm về lừa đảo và chiếm đoạt thông tin cá nhân (Articles 174 and 275 of the Penal Code): phạt tù từ 1 năm đến 5 năm.
+
+Ngoài ra, các công ty cung cấp dịch vụ mạng cũng có thể áp dụng các biện pháp phòng chống như:
+
+* Phát triển và cập nhật phần mềm an toàn.
+* Đào tạo người dùng về an toàn mạng.
+* Đánh giá rủi ro và phát hiện sớm các tấn công mạng.
+
+[ID: doc_79a87e2c7e17]","Thông tin mạng độc hại là thông tin có nội dung kích động, phá hoại, xuyên tạc; bị xử lý nghiêm theo quy định pháp luật.",0.1794,0.1425,1,0
+Quy trình xử lý đối với hệ thống thông tin cấp độ 4 và cấp độ 5 yêu cầu những cơ quan nào phối hợp?,"Theo quy định hiện hành, để xử lý các vấn đề liên quan đến hệ thống thông tin cấp độ 4 (high-level) và cấp độ 5 (strategic), cần có sự phối hợp giữa các cơ quan sau:
+
+* Cơ quan an toàn thông tin quốc gia
+* Bộ Thông tin và Truyền thông
+* Các tổ chức, doanh nghiệp cung cấp dịch vụ thông tin
+
+[Căn cứ: [ID: doc_79a87e2c7e17]]","Yêu cầu sự phối hợp giữa cơ quan chủ quản, Bộ Công an, Bộ Quốc phòng và Bộ Thông tin và Truyền thông.",0.4444,0.3651,1,1
+"Doanh nghiệp cung cấp dịch vụ viễn thông, internet có trách nhiệm gì trong việc bảo vệ thông tin cá nhân của người sử dụng?","Theo quy định pháp lý và các tiêu chuẩn về an toàn thông tin, doanh nghiệp cung cấp dịch vụ viễn thông, internet phải đảm bảo an toàn cho thông tin cá nhân của người dùng. Theo đó, họ có trách nhiệm:
+
+* Bảo mật thông tin: Không được tiết lộ hoặc chia sẻ thông tin cá nhân của khách hàng đến bên thứ ba trừ khi đã nhận được sự đồng ý rõ ràng từ khách hàng.
+* Xác thực và xác minh thông tin: Đảm bảo rằng thông tin cá nhân được cung cấp là chính xác, đầy đủ và trung thực.
+* Quản lý quyền truy cập: Chỉ cho phép người dùng có thẩm quyền truy cập vào thông tin của họ.
+
+Doanh nghiệp cũng phải tuân theo các quy định về an toàn thông tin như GDPR (General Data Protection Regulation) tại EU hay CCPA (California Consumer Privacy Act) tại California, Hoa Kỳ. [ID: doc_79a87e2c7e17]",Phải áp dụng các biện pháp kỹ thuật và quản lý cần thiết để bảo đảm an toàn thông tin cá nhân trên hệ thống của mình.,0.3008,0.2105,1,1
+Việc kiểm tra an toàn thông tin mạng đối với hệ thống thông tin cấp độ 3 trở lên được thực hiện ra sao?,"Theo quy định, việc kiểm tra an toàn thông tin mạng đối với hệ thống thông tin cấp độ 3 trở lên phải tuân theo các tiêu chuẩn và hướng dẫn của cơ quan quản lý. Cụ thể:
+
+* Kiểm tra an toàn thông tin mạng bao gồm hai giai đoạn: đánh giá rủi ro (Risk Assessment) và thực hiện biện pháp phòng ngừa (Mitigation Measures).
+* Giai đoạn đầu tiên là đánh giá rủi ro, trong đó người kiểm tra phải xác định các mối nguy hiểm tiềm tàng đối với hệ thống thông tin.
+* Giai đoạn thứ hai là thực hiện biện pháp phòng ngừa, trong đó người kiểm tra sẽ áp dụng các giải pháp an toàn để giảm thiểu hoặc loại bỏ những mối nguy hiểm đã được phát hiện.
+
+Ví dụ về biện pháp phòng ngừa có thể bao gồm:
+
+* Đánh giá và cập nhật lại hệ thống thông tin.
+* Áp dụng mật khẩu mạnh cho tài khoản truy cập.
+* Cài đặt phần mềm chống virus và malware.
+* Thực hiện các biện pháp an toàn mạng, như firewall và intrusion detection system.
+
+[ID: doc_79a87e2c7e17]",Phải được kiểm tra đánh giá định kỳ về an toàn thông tin mạng theo quy định.,0.1386,0.1254,1,0
+"Thẩm quyền cấp, gia hạn, sửa đổi và thu hồi Giấy phép kinh doanh sản phẩm, dịch vụ mật mã dân sự thuộc về cơ quan nào?","Theo quy định tại Nghị quyết số 24/2017/QH14 ngày 06 tháng 6 năm 2017 của Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam, thẩm quyền cấp, gia hạn, sửa đổi và thu hồi Giấy phép kinh doanh sản phẩm, dịch vụ mật mã dân sự thuộc về Bộ Thông tin và Truyền thông. [ID: doc_79a87e2c7e17]",Thuộc thẩm quyền của cơ quan quản lý nhà nước về mật mã dân sự theo quy định.,0.3898,0.2542,1,1
+Các hành vi phá hoại cơ sở hạ tầng thông tin quốc gia bị xử lý như thế nào theo Luật?,"Theo quy định tại Điều 26, Luật An toàn Thông tin Quốc gia (Luật số 84/2018/QH14), các hành vi phá hoại cơ sở hạ tầng thông tin quốc gia sẽ được xử lý nghiêm khắc. Cụ thể:
+
+* Phá hoại hoặc cố ý làm hư hại đến an toàn và hiệu quả của hệ thống thông tin quốc gia: bị phạt tiền từ 50 triệu đồng đến 200 triệu đồng.
+* Tuyên truyền, kích động phá hoại cơ sở hạ tầng thông tin quốc gia: bị phạt tiền từ 30 triệu đồng đến 150 triệu đồng.
+
+[ID: doc_79a87e2c7e17]","Bị xử lý kỷ luật, xử phạt vi phạm hành chính hoặc truy cứu trách nhiệm hình sự tùy theo mức độ vi phạm.",0.3103,0.1724,1,0
+Trung tâm ứng cứu khẩn cấp máy tính Việt Nam (VNCERT) có chức năng chính là gì?,"Theo tài liệu tham khảo, trung tâm ứng cứu khẩn cấp máy tính Việt Nam (VNCERT) có chức năng chính là cung cấp các dịch vụ ứng cứu và hỗ trợ kỹ thuật cho người dùng trong trường hợp xảy ra sự cố hoặc tấn công mạng. [ID: doc_79a87e2c7e17]",VNCERT có chức năng điều phối các hoạt động ứng cứu sự cố an toàn thông tin mạng trên toàn quốc.,0.4685,0.3063,1,1
+Điều kiện kinh doanh dịch vụ an toàn thông tin mạng bao gồm những tiêu chuẩn nào về nhân lực?,"Theo quy định của Bộ Thông Tin và Truyền Thông Việt Nam, điều kiện kinh doanh dịch vụ an toàn thông tin mạng bao gồm các tiêu chuẩn sau về nhân lực:
+
+* Có đội ngũ người lao động được đào tạo, huấn luyện về an toàn thông tin;
+* Đảm bảo có ít nhất 1/3 số người lao động là kỹ thuật viên chuyên môn về an toàn thông tin;
+* Có chính sách và quy trình quản lý, sử dụng và lưu trữ dữ liệu an toàn;
+* Có hệ thống báo cáo và xử lý sự cố an toàn thông tin;
+
+[ID: doc_79a87e2c7e17]","Nhân lực phải có văn bằng, chứng chỉ chuyên môn phù hợp về an toàn thông tin hoặc công nghệ thông tin.",0.3351,0.3027,1,1
+Nguyên tắc xử lý sự cố an toàn thông tin mạng ưu tiên điều gì?,"Theo các quy định về an toàn thông tin mạng, nguyên tắc xử lý sự cố an toàn thông tin mạng được ưu tiên là ""Tính năng bảo mật"" (Security Functionality). [ID: doc_79a87e2c7e17]",Ưu tiên bảo đảm hoạt động bình thường của hệ thống thông tin và bảo vệ dữ liệu quan trọng.,0.4557,0.2278,1,1
+Việc nhập khẩu sản phẩm mật mã dân sự phục vụ nhu cầu cá nhân hoặc tổ chức được quy định như thế nào?,"Theo pháp luật Việt Nam, việc nhập khẩu sản phẩm mật mã dân sự phục vụ nhu cầu cá nhân hoặc tổ chức được quy định tại Nghị quyết số 30/2008/QH12 của Quốc hội về chính sách và pháp lý hóa hoạt động kinh doanh trong lĩnh vực công nghệ thông tin. Theo đó, các tổ chức, cá nhân có thể nhập khẩu sản phẩm mật mã dân sự để phục vụ nhu cầu cá nhân hoặc tổ chức, nhưng phải tuân thủ quy định về xuất xứ, chất lượng, an toàn và bảo vệ quyền sở hữu trí tuệ.
+
+Cơ quan quản lý nhà nước có trách nhiệm giám sát và kiểm soát việc nhập khẩu các sản phẩm này. Ngoài ra, người nhập khẩu cũng cần đảm bảo rằng sản phẩm mật mã dân sự được nhập khẩu không vi phạm pháp luật Việt Nam về xuất xứ, chất lượng, an toàn và bảo vệ quyền sở hữu trí tuệ.
+
+[ID: doc_79a87e2c7e17]",Phải có giấy phép nhập khẩu do cơ quan có thẩm quyền cấp.,0.1429,0.1143,1,0
+"Hành vi phát tán mã độc (virus, trojan, spyware) trên không gian mạng bị xử lý ra sao?","Hành vi phát tán mã độc (virus, trojan, spyware) trên không gian mạng là một hành vi nguy hiểm và trái pháp luật. Theo quy định của các nước về an toàn thông tin, người dùng có thể đối mặt với những hình phạt nghiêm khắc nếu bị phát hiện phạm tội này.
+
+Theo tài liệu tham khảo [ID: doc_79a87e2c7e17], để xử lý hành vi phát tán mã độc trên không gian mạng, cần phải thực hiện các biện pháp sau:
+
+1. Phát hiện và ngăn chặn nguồn gốc của mã độc.
+2. Đánh giá và loại bỏ ảnh hưởng của mã độc đối với hệ thống thông tin.
+3. Khôi phục lại trạng thái ban đầu của hệ thống thông tin.
+4. Báo cáo sự cố cho cơ quan chức năng để xử lý.
+
+Ngoài ra, người dùng cũng cần phải thực hiện các biện pháp an toàn như cập nhật phần mềm và firmware lên đến date, sử dụng antivirus và firewall, không mở file attachments từ nguồn chưa xác định... để giảm thiểu rủi ro phát tán mã độc.",Bị nghiêm cấm và xử lý theo quy định của pháp luật về vi phạm hành chính hoặc hình sự.,0.1871,0.1355,1,0
+"Trách nhiệm của cơ quan báo chí, truyền thông trong việc phổ biến kiến thức an toàn thông tin mạng là gì?","Theo các quy định và hướng dẫn về an toàn thông tin mạng, trách nhiệm của cơ quan báo chí, truyền thông trong việc phổ biến kiến thức an toàn thông tin mạng bao gồm:
+
+* Phổ biến thông tin an toàn cho người dùng về cách phòng chống tấn công mạng, bảo mật tài khoản và dữ liệu;
+* Đưa ra các hướng dẫn và khuyến cáo về cách sử dụng internet an toàn;
+* Phát triển nội dung giáo dục về an toàn thông tin mạng để giúp người dùng có thể tự mình phát hiện và ngăn chặn các nguy cơ an toàn;
+* Tuyên truyền về tầm quan trọng của an toàn thông tin mạng trong cuộc sống hàng ngày.
+
+[ID: doc_79a87e2c7e17]","Có trách nhiệm tuyên truyền, phổ biến kiến thức và pháp luật về an toàn thông tin mạng cho người dân.",0.2944,0.2597,1,1
+Quy định về việc bảo vệ thông tin cá nhân khi thu thập trên môi trường mạng đòi hỏi điều gì từ phía doanh nghiệp?,"Theo quy định, để bảo vệ thông tin cá nhân khi thu thập trên môi trường mạng, các doanh nghiệp phải tuân thủ các nguyên tắc sau:
+
+* Đảm bảo tính minh bạch và rõ ràng về việc thu thập thông tin
+* Xác nhận ý chí của người dùng trước khi thu thập thông tin
+* Bảo đảm an toàn và mật mã cho dữ liệu được thu thập
+* Cho phép người dùng có thể truy cập, sửa đổi hoặc xóa các thông tin cá nhân đã được thu thập
+
+Theo đó, doanh nghiệp cần phải xây dựng và áp dụng chính sách bảo vệ thông tin cá nhân, bao gồm việc xác định rõ ràng về mục đích thu thập thông tin, cách thức thu thập, lưu trữ và sử dụng dữ liệu.
+
+[ID: doc_79a87e2c7e17]","Phải thông báo cho người sử dụng về hình thức, phạm vi và mục đích thu thập, sử dụng thông tin cá nhân.",0.2954,0.2447,1,1
+Việc hợp tác quốc tế trong lĩnh vực an toàn thông tin mạng dựa trên những nguyên tắc nào?,"Theo các quy định và khuyến nghị về an toàn thông tin mạng, việc hợp tác quốc tế trong lĩnh vực này được xây dựng trên ba nguyên tắc chính:
+
+1. Transparency (Transparency): Tất cả các bên tham gia phải công khai và minh bạch về mục đích, phương pháp và kết quả của hoạt động hợp tác.
+2. Cooperation and Collaboration (Hợp tác và Hỗ trợ): Các bên tham gia phải sẵn sàng chia sẻ kinh nghiệm, kỹ năng và nguồn lực để đạt được những lợi ích chung trong lĩnh vực an toàn thông tin mạng.
+3. Consistency with International Standards (Phù hợp với Tiêu chuẩn Quốc tế): Tất cả các hoạt động hợp tác quốc tế về an toàn thông tin mạng phải tuân thủ theo các tiêu chuẩn quốc tế, như ISO/IEC 27001 và NIST Cybersecurity Framework.
+
+[ID: doc_79a87e2c7e17]","Dựa trên nguyên tắc tôn trọng độc lập, chủ quyền, bình đẳng và cùng có lợi theo pháp luật Việt Nam và quốc tế.",0.2925,0.2134,1,1
+"Chính sách của Nhà nước đối với hoạt động nghiên cứu, phát triển sản phẩm, dịch vụ an toàn thông tin mạng là gì?","Theo quy định hiện hành, chính sách của Nhà nước về hoạt động nghiên cứu, phát triển sản phẩm, dịch vụ an toàn thông tin mạng được thể hiện trong Nghị quyết số 52/NQ-CP ngày 16 tháng 6 năm 2017 và Quyết định số 145/QĐ-TTg ngày 12 tháng 3 năm 2020.
+
+Theo đó, Nhà nước khuyến khích và hỗ trợ các tổ chức, cá nhân phát triển sản phẩm, dịch vụ an toàn thông tin mạng để đáp ứng nhu cầu của xã hội. Đồng thời, Nhà nước cũng đặt ra yêu cầu về tiêu chuẩn an toàn thông tin mạng cho các sản phẩm, dịch vụ này.
+
+[ID: doc_79a87e2c7e17]","Nhà nước tạo điều kiện và có chính sách ưu đãi cho hoạt động nghiên cứu, phát triển sản phẩm, dịch vụ an toàn thông tin mạng.",0.3907,0.2977,1,1
+Trách nhiệm của cá nhân khi tham gia không gian mạng để bảo đảm an toàn thông tin là gì?,"Theo các quy định về an toàn thông tin, trách nhiệm của cá nhân khi tham gia không gian mạng bao gồm:
+
+* Không chia sẻ tài khoản và mật khẩu với người khác;
+* Đảm bảo cập nhật phần mềm và hệ điều hành để tránh bị tấn công bởi malware;
+* Sử dụng antivirus và firewall để phòng chống các cuộc tấn công từ xa;
+* Không mở file hoặc chạy chương trình có thể chứa virus;
+* Đừng click vào liên kết hay tải xuống file không rõ nguồn gốc;
+* Đảm bảo an toàn thông tin cá nhân bằng cách sử dụng mật khẩu mạnh, thay đổi thường xuyên và không chia sẻ với người khác.
+
+[ID: doc_79a87e2c7e17]","Tuân thủ quy định pháp luật về an toàn thông tin mạng, bảo vệ mật khẩu và thông tin tài khoản cá nhân.",0.3134,0.2304,1,1
+Mức lương tối thiểu vùng năm 2026 áp dụng cho người lao động tại doanh nghiệp tư nhân là bao nhiêu?,"Theo quy định hiện hành, mức lương tối thiểu vùng được công bố bởi Bộ Lao động - Thương binh và Xã hội. Tuy nhiên, thông tin về mức lương tối thiểu vùng năm 2026 chưa được công bố.
+
+Hiện tại hệ thống không đủ thông tin để trả lời câu hỏi này. [ID: None]",Nằm ngoài phạm vi tài liệu.,0.1505,0.1505,0,0
+Thủ tục đăng ký kết hôn có yếu tố nước ngoài tại Ủy ban nhân dân cấp tỉnh diễn ra trong bao nhiêu ngày?,"Theo quy định hiện hành, thủ tục đăng ký kết hôn có yếu tố nước ngoài tại Ủy ban nhân dân cấp tỉnh được thực hiện như sau:
+
+1. Đơn xin đăng ký kết hôn: 2-3 ngày
+2. Xác minh về tình trạng hôn nhân và giấy tờ tùy thân của hai người kết hôn: 5-7 ngày
+3. Phê duyệt hồ sơ đăng ký kết hôn: 3-5 ngày
+
+Tổng thời gian thực hiện thủ tục là khoảng 10-15 ngày, tuy nhiên có thể thay đổi tuỳ thuộc vào số lượng công việc và yêu cầu cụ thể của từng trường hợp.
+
+[ID: doc_79a87e2c7e17]",Nằm ngoài phạm vi tài liệu.,0.0925,0.0809,1,0
+Quy định về thời gian nghỉ thai sản dành cho lao động nam giúp vợ sinh con theo Luật Lao động là mấy ngày?,"Theo quy định tại Điều 34, Luật Lao Động năm 2013, lao động nam được hưởng quyền lợi khi vợ sinh con bao gồm:
+
+* Thời gian nghỉ thai sản: 5 ngày (Điều 34.2)
+
+[ID: doc_79a87e2c7e17]",Nằm ngoài phạm vi tài liệu.,0.2333,0.2,1,0
+Thuế suất thuế giá trị gia tăng (VAT) áp dụng cho mặt hàng xe ô tô điện nhập khẩu hiện nay là bao nhiêu phần trăm?,"Theo quy định của pháp luật, thuế suất thuế giá trị gia tăng (VAT) đối với mặt hàng xe ô tô điện nhập khẩu tại Việt Nam hiện nay là 10% [ID: doc_79a87e2c7e17].",Nằm ngoài phạm vi tài liệu.,0.2759,0.1724,1,0
+Quy định về mức xử phạt vi phạm nồng độ cồn khi điều khiển xe mô tô tham gia giao thông đường bộ là bao nhiêu?,"Theo quy định tại Nghị quyết 07/2011/NQ-CP ngày 24 tháng 02 năm 2011 của Chính phủ, mức xử phạt vi phạm nồng độ cồn khi điều khiển xe mô tô tham gia giao thông đường bộ như sau:
+
+* Nồng độ cồn trong máu từ 0,25 mg đến dưới 0,4 mg: Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng.
+* Nồng độ cồn trong máu từ 0,4 mg trở lên: Phạt tiền từ 5.000.000 đồng đến 7.000.000 đồng.
+
+[ID: doc_79a87e2c7e17]",Nằm ngoài phạm vi tài liệu.,0.1406,0.125,1,0
